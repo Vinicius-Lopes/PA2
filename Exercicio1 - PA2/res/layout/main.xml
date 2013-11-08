@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Main" >
+    
+    <Button
+        android:id="@+id/bt_CM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_CM" />
+
+    <TextView
+        android:id="@+id/qtClickCM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_CM"
+        android:layout_alignBottom="@+id/bt_CM"
+        android:layout_toRightOf="@+id/bt_CM"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/bt_PM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_CM"
+        android:layout_below="@+id/bt_CM"
+        android:layout_marginTop="32dp"
+        android:onClick="randomizeColor"
+        android:text="@string/bt_PM" />
+
+    <TextView
+        android:id="@+id/qtClickPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_PM"
+        android:layout_alignBottom="@+id/bt_PM"
+        android:layout_toRightOf="@+id/bt_PM"
+        android:text="0" />
+
+</RelativeLayout>
